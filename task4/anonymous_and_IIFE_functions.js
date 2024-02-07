@@ -1,17 +1,18 @@
+let ispalindrome = function(words){
+  let palindromes = [];
+for (let word of words){
+   let reverse = '';
+   for ( let index =word.length-1; index>=0; index--){
+       reverse += word[index];
+   }
 
-let isPrime = function (num) {
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-      if (num % i === 0) return false; // 
-  }
+   if (word === reverse){
+       palindromes.push(word);
+   }
+ }
+  return palindromes;
 
-  return true; 
 }
-
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,13];
-let prime = [];
-for (let index = 0; index < numbers.length; index++) {
-  if (isPrime(numbers[index])) {
-      prime.push(numbers[index])
-  }
-}
-console.log("Prime numbers in the array:", prime);
+const strings = ["level", "hello", "noon", "radar", "world", "deified"];
+const palindromes = ispalindrome(strings);
+console.log("Palindromes in the array:", palindromes);
