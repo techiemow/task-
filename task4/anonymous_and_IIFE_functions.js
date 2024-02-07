@@ -1,18 +1,13 @@
-(()=>{
+let ArrAfterDuplicate = ((array) =>{
+  const uniqueArray = [];
 
-let isPrime = (num) =>{
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-      if (num % i === 0) return false; // 
+  for (let i = 0; i < array.length; i++) {
+      if (!uniqueArray.includes(array[i])) {
+          uniqueArray.push(array[i]);
+      }
   }
 
-  return true; 
-}
-let numbers = [1,2,3,4,5,6,7,8,9,10];
-const prime = [];
-for (let index = 0; index < numbers.length; index++) {
-  if (isPrime(numbers[index])) {
-      prime.push(numbers[index])
-  }
-}
-console.log("Prime numbers in the array:", prime);
-})();
+  return uniqueArray;
+})([1, 2, 3, 3, 4,7,9,10 ,5, 5]);
+
+console.log(ArrAfterDuplicate)
