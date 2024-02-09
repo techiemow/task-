@@ -31,4 +31,4 @@ class circle{
 
 }
 let OneRound = new circle(5,'red');
-console.log(OneRound.circle());
+console.log(OneRound.getArea());
