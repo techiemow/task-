@@ -1,4 +1,4 @@
-Using this link Rest Countries Date :https://restcountries.com/v3.1/all I have solved the following problems using array functions
+Using this link Rest Countries Data :https://restcountries.com/v3.1/all I have solved the following problems using array functions
 
 1-Get all the countries from Asia continent /region using Filter function
 2-Get all the countries with a population of less than 2 lakhs using Filter function
