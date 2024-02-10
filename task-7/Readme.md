@@ -10,4 +10,4 @@ Using this link Rest Countries Date :https://restcountries.com/v3.1/all I have s
                               Open the terminal in the same directory of any one of the .js files and run the following command:
  "npm install xhr2".
   
-  This to create a connection between the client and Server.
+  This is to create a connection between the client and Server.
